@@ -17,7 +17,11 @@
     The majority of web servers are configured to search for an <code>index.html</code> file whenever they receive a request for <code>/</code>, the <strong>root directory</strong>. On 
     some web servers, other file names are accepted as homepages. For example, Microsoft web servers will also look for <code>default.html</code> files.</p>
     <!-- 2. Explain what can be seen in the browser's Web Dev/Inspector Network tab output screen. What is different about the file's details when viewed from the web server versus the local computer? -->
-    <p></p>
+    <p>The Inspection tools in web browsers such as Firefox and Google Chrome allow users to view requests and responses between the <strong>web client</strong> and different servers. The network information
+    can differ based on which <strong>protocol</strong> is used. When viewing the local file version of this webpage, the network information will show three resources: <code>index.html</code>, <code>main.css</code>, and <code>main.js</code>. 
+    The general network information for the <code>index.html</code> file shows the resource URL, request method, status code, and referrer policy. It shows limited response and request headers as well.
+    When the same file is accessed through a web server, the network information is quite different. Three additional resources are shown: two stylesheets and <code>favicon.ico</code>. The general tab includes
+    a remote <strong>IP address</strong> of where the server is located. The request and response headers are more detailed, showing information on the server, the user-agent, and time and date signatures.</p>
     <!-- 3. Explain why the favicon.ico file has a status 200, but the main.css and main.js files do not. -->
     <p></p>
     <!-- 4. Explain the parts of the URL to your web file. What is the scheme, the subdomain, the host domain, and the resource. -->
